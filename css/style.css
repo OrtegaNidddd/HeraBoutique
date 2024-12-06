@@ -15,9 +15,37 @@ body{
 
 :root{
     --title-primary-color: #471023;
+    --bg-button-primary-color: #f83c86;
+    --bg-button-primary-hover: #e91f64;
     --text-primary-color: #c84579;
+    --text-white: #fef1f7;
     --bg-secondary-color: #ffcae4;
+    --title-footer-color: #f6d4e5;
+    --text-footer-color: #e482b0;
+    --bg-footer-color: #aa2c5a;
     --bg-color: #f9eaf2;
+}
+
+h2{
+    color: var(--title-primary-color);
+}
+
+.primary-Button{
+    cursor: pointer;
+    width: 125px;
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: 25px;
+    border: none;
+    color: var(--text-white);
+    font-size: 16px;
+    font-family: "Poppins";
+    background-color: var(--bg-button-primary-color);
+    transition: background-color .3s ease-in-out;
+}
+
+.primary-Button:hover{
+    background-color: var(--bg-button-primary-hover);
 }
 
 /**/
@@ -135,4 +163,183 @@ body{
     margin: 10px 0px 0px 0px;
     width: 100%;
     height: auto;
+}
+
+/*REGALO NAVIDENO TXT*/
+
+#regalo{
+    margin: 1rem 2rem 2rem 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: var(--title-primary-color);
+}
+
+#regalo h2{
+    font-size: 50px;
+    letter-spacing: -3px;
+}
+
+/*section 1 top lista de regalos*/
+
+#section-1{
+    margin: 2rem;
+}
+
+#section-1 h2{
+    font-weight: 450;
+}
+
+#section-1 div{
+    display: flex;
+    justify-content: space-between;
+    gap: 13px;
+}
+
+.container-img-lista-top{
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+    width: 450px;
+    height: auto;
+}
+
+.container-img-lista-top img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.container-img-lista-top a{
+    width: 100%;
+    height: 90%;
+}
+
+.container-img-lista-top span{
+    font-size: 22px;
+    font-weight: 600;
+    color: var(--title-primary-color);
+    margin: 0rem 0px auto 10px;
+}
+
+/*FOOTER*/
+
+footer{
+    background-color: var(--bg-footer-color);
+    padding: 2rem;
+    color: var(--title-footer-color);
+}
+
+.footer-container-1{
+    display: flex;
+    gap: 3rem;
+}
+
+.title-register-footer a{
+    color: var(--title-footer-color);
+    text-decoration: none;
+}
+
+.links-footer{
+    text-decoration: none;
+    color: var(--text-footer-color);
+}
+
+.links-footer:hover{
+    color: var(--title-footer-color);
+}
+
+.title-subcontainer-footer{
+    margin-bottom: 1rem;
+    letter-spacing: 1px;
+}
+
+.footer-subcontainer-1 ul{
+    list-style: none;
+    font-size: 15px;
+}
+
+.footer-subcontainer-2{
+    border-left: 1px solid var(--title-primary-color);
+    padding-left: 1rem;
+}
+
+.footer-subcontainer-2 h3{
+    text-align: center;
+}
+
+#container-redes{
+    display: flex;
+    justify-content: center;
+    width: 70vh;
+    gap: 2rem;
+    margin-top: 10px;
+}
+
+#container-redes a{
+    text-decoration: none;
+    color: var(--title-footer-color);
+}
+
+#container-redes i{
+    font-size: 25px;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    border: 1px solid var(--title-footer-color);
+    border-radius: 50%;
+}
+
+.footer-container-2{
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+#footer-copyright{
+    display: flex;
+    flex-direction: column;
+    font-size: 16px;
+}
+
+#footer-copyright i{
+    text-align: center;
+    align-content: center;
+    margin: 0rem 0.6rem 0rem 0rem;
+    width: 20px;
+    height: 20px;
+}
+
+.footer-terminos{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.footer-terminos ul{
+    display: flex;
+    list-style: none;
+    gap: 1rem;
+}
+
+.footer-terminos ul a{
+    font-size: 13px;
+    font-weight: 575;
+    text-decoration: none;
+    color: var(--text-footer-color);
+}
+
+.footer-terminos ul a:hover{
+    color: var(--title-footer-color);
+}
+
+.footer-terminos img{
+    margin-left: 1rem;
+    width: 80px;
+    background-color: var(--bg-secondary-color);
+    border-radius: 10px;
 }
