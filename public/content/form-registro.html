@@ -5,17 +5,16 @@
     <title>Hera Boutique</title>
     <link rel="stylesheet" href="../css/style.css">
     <script src="https://kit.fontawesome.com/a1ddf57449.js" crossorigin="anonymous"></script>
-    <script src="../js/conexion.js"></script>
 </head>
 <body>
 <header>
     <nav id="navPrimario">
-        <img src="../images/logos/H-sin-fondo.png" alt="">
+        <img src="../assets/images/logos/H-sin-fondo.png" alt="">
         <h1>Hera Boutique</h1>
         <ul>
-            <a href="../html/obtener-ayuda.html"><li>Ayuda</li></a>
+            <a href="../content/obtener-ayuda.html"><li>Ayuda</li></a>
             <div></div>
-            <a href="../html/form-registro.html"><li>Registrate</li></a>
+            <a href="../content/form-registro.html"><li>Registrate</li></a>
             <div></div>
             <a href="https://maps.app.goo.gl/MGWircg6NLpjwxgQ9" target="_blank"><li>Ubicacion</li></a>
         </ul>
@@ -23,7 +22,7 @@
     <nav id="navMenu">
         <img src="" alt="">
         <ul>
-            <a href="../html/index.html" class="links-menu"><li>Inicio</li></a>
+            <a href="../index.html" class="links-menu"><li>Inicio</li></a>
             <a href="" class="links-menu"><li>Novedades</li></a>
             <a href="" class="links-menu"><li>Ropa</li></a>
             <a href="" class="links-menu"><li>Maquillaje</li></a>
@@ -39,7 +38,7 @@
         </div>
     </nav>
     <nav id="navAnuncio">
-        <a href=""><img src="../images/gif/envios_y_devoluciones.gif" alt="envios_y_devoluciones"></a>
+        <a href=""><img src="../assets/videos/envios_y_devoluciones.gif" alt="envios_y_devoluciones"></a>
     </nav>
 </header>
 <main id="container-registro">
@@ -133,12 +132,12 @@
                 <a href=""><li>Políticas de Privacidad</li></a>
                 <a href=""><li>Términos de Venta</li></a>
             </ul>
-            <img src="../images/logos/logo-sin-fondo.png" alt="">
+            <img src="../assets/images/logos/logo-sin-fondo.png" alt="">
         </div>
     </div>
 </footer>
 <script>
-    document.getElementById('formularioRegistro').addEventListener('submit', async function(e) {
+    /*document.getElementById('formularioRegistro').addEventListener('submit', async function(e) {
         e.preventDefault(); // Detener envío tradicional del formulario
 
         // Obtener elementos del formulario
@@ -186,7 +185,7 @@
             document.getElementById('respuesta').innerHTML = 
                 `<p style="color: red;">Error de conexión: ${error.message}</p>`;
         }
-    });
+    });*/
     </script>
 </body>
 </html>
