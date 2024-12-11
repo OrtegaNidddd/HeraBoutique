@@ -10,6 +10,8 @@ let conexion = mysql.createConnection({
     database: "hera_boutique"
 });
 
+//Ruta de Archivos Dinamicos::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
 app.set("view engine", "ejs");
 
 app.use(express.json());
@@ -20,11 +22,12 @@ app.get("/", function(req, res){
 });
 
 app.get("/registro", function(req, res){
-    res.render("form-registro.ejs");
+    res.render("form-registro");
 });
 
 
 //Ruta de Archivos Estaticos::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
 app.use(express.static("public"));
 
 app.post("/validar", function(req, res){
