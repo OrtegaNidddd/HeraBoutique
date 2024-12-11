@@ -30,6 +30,7 @@ app.get("/registro", function(req, res){
 
 app.use(express.static("public"));
 
+//Registro de Clientes::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 app.post("/validar", function(req, res){
     const datos = req.body;
 
@@ -41,37 +42,34 @@ app.post("/validar", function(req, res){
     let ciudad = datos.ciudad;
     let genero = datos.genero;
     let cumpleanos = datos.cumpleanos;
-    
+
+    let mensaje;    
     let buscar = "SELECT * FROM clientes WHERE cedula = '" + cedula + "'";
+    let success;
 
     conexion.query(buscar, function(err, resultado){
         if(err){
-            console.log("Error: No se pudo conectar a la base de datos");
-            res.render("form-registro.ejs");
+            mensaje = "Error: No se pudo conectar a la base de datos";
+            res.render("form-registro.ejs", {mensaje});
         }else{
             if(resultado.length > 0){
-                console.log("Error: El cédula ya está registrada");
-                res.render("form-registro.ejs");
+                mensaje = "Error: La cédula ya está registrada";
+                res.render("form-registro.ejs", {mensaje});
             }else{
-
                 let registrar = "INSERT INTO clientes (nombres, apellidos, telefono, email, ciudad, genero, cumpleanos, cedula) VALUES (' " + nombres + "', '" + apellidos + "', '" + telefono + "', '" + email + "', '" + ciudad + "', '" + genero + "', '" + cumpleanos + "', '" + cedula + "')";
-
                 conexion.query(registrar, function(err){
                     if(err){
-                        res.render("form-registro.ejs");
-                        console.log("Error: No se pudo registrar el cliente");
+                        mensaje = "Error: No se pudo registrar el cliente";
+                        res.render("form-registro.ejs", {mensaje});
                     }else{
-                        console.log("Datos registrados exitosamente");
-                        res.render("form-registro.ejs");
+                        success = "Datos registrados exitosamente";
+                        res.render("form-registro.ejs", {success});
                     }
                 });
             }
         }
     });
-
-    
 });
-
 
 //Puerto de la aplicación:::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
