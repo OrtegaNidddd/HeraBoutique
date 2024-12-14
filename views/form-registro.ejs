@@ -24,17 +24,57 @@
         <ul>
             <a href="/" class="links-menu"><li>Inicio</li></a>
             <a href="" class="links-menu"><li>Novedades</li></a>
-            <a href="" class="links-menu"><li>Ropa</li></a>
+            <a href="content/ropa.html" class="links-menu"><li>Ropa</li></a>
             <a href="" class="links-menu"><li>Maquillaje</li></a>
             <a href="" class="links-menu"><li>Accesorios</li></a>
-            <a href="" class="links-menu"><span>Descuentos </span></a>
+            <a href="" class="links-menu"  id="navMenuSpan"><span>Descuentos </span></a>
         </ul>
         <div>
             <div id="nav-menu-buscar">
                 <i class="fa-solid fa-magnifying-glass"></i>
                 <input type="search" name="" placeholder="Buscar productos">
             </div>
-            <a href=""><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="#471023" d="M7 22q-.825 0-1.412-.587T5 20t.588-1.412T7 18t1.413.588T9 20t-.587 1.413T7 22m10 0q-.825 0-1.412-.587T15 20t.588-1.412T17 18t1.413.588T19 20t-.587 1.413T17 22M5.2 4h14.75q.575 0 .875.513t.025 1.037l-3.55 6.4q-.275.5-.737.775T15.55 13H8.1L7 15h11q.425 0 .713.288T19 16t-.288.713T18 17H7q-1.125 0-1.7-.987t-.05-1.963L6.6 11.6L3 4H2q-.425 0-.712-.288T1 3t.288-.712T2 2h1.625q.275 0 .525.15t.375.425z"/></svg></a>
+            <div class="container-icon">
+                <div class="container-cart-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="icon-cart">
+                        <path fill="#471023" d="M7 22q-.825 0-1.412-.587T5 20t.588-1.412T7 18t1.413.588T9 20t-.587 1.413T7 22m10 0q-.825 0-1.412-.587T15 20t.588-1.412T17 18t1.413.588T19 20t-.587 1.413T17 22M5.2 4h14.75q.575 0 .875.513t.025 1.037l-3.55 6.4q-.275.5-.737.775T15.55 13H8.1L7 15h11q.425 0 .713.288T19 16t-.288.713T18 17H7q-1.125 0-1.7-.987t-.05-1.963L6.6 11.6L3 4H2q-.425 0-.712-.288T1 3t.288-.712T2 2h1.625q.275 0 .525.15t.375.425z"/>
+                    </svg>
+                    <div class="count-products">
+                        <span id="contador-productos">0</span>
+                    </div>
+                </div>
+        
+                <div class="container-cart-products hidden-cart">
+                    <div class="row-product hidden">
+                        <div class="cart-product">
+                            <div class="info-cart-product">
+                                <span class="cantidad-producto-carrito">1</span>
+                                <p class="titulo-producto-carrito">Sin producto</p>
+                                <span class="precio-producto-carrito">$0</span>
+                            </div>
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                fill="none"
+                                viewBox="0 0 24 24"
+                                stroke-width="1.5"
+                                stroke="currentColor"
+                                class="icon-close"
+                            >
+                                <path
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    d="M6 18L18 6M6 6l12 12"
+                                />
+                            </svg>
+                        </div>
+                    </div>
+        
+                    <div class="cart-total hidden">
+                        <h3>Total:</h3>
+                        <span class="total-pagar">$0</span>
+                    </div>
+                    <p class="cart-empty">CARRITO DE COMPRAS</p>
+                </div>
         </div>
     </nav>
     <nav id="navAnuncio">
@@ -156,56 +196,6 @@
         </div>
     </div>
 </footer>
-<script>
-    /*document.getElementById('formularioRegistro').addEventListener('submit', async function(e) {
-        e.preventDefault(); // Detener envío tradicional del formulario
-
-        // Obtener elementos del formulario
-        const nombre = document.getElementById('nombre').value;
-        const email = document.getElementById('email').value;
-        const edad = document.getElementById('edad').value;
-        const mensaje = document.getElementById('mensaje').value;
-
-        // Crear objeto con los datos
-        const datos = {
-            nombre: nombre,
-            email: email,
-            edad: edad,
-            mensaje: mensaje
-        };
-
-        try {
-            // Realizar la solicitud de envío
-            const respuesta = await fetch('/api/guardar-registro', {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json',
-                },
-                body: JSON.stringify(datos)
-            });
-
-            // Verificar la respuesta del servidor
-            if (respuesta.ok) {
-                const resultado = await respuesta.json();
-                
-                // Mostrar mensaje de éxito
-                document.getElementById('respuesta').innerHTML = 
-                    `<p style="color: green;">Registro guardado exitosamente. ID: ${resultado.id}</p>`;
-                
-                // Limpiar el formulario
-                document.getElementById('formularioRegistro').reset();
-            } else {
-                // Manejar errores
-                const error = await respuesta.json();
-                document.getElementById('respuesta').innerHTML = 
-                    `<p style="color: red;">Error: ${error.mensaje}</p>`;
-            }
-        } catch (error) {
-            // Capturar errores de red u otros
-            document.getElementById('respuesta').innerHTML = 
-                `<p style="color: red;">Error de conexión: ${error.message}</p>`;
-        }
-    });*/
-    </script>
+<script src="../js/carrito.js"></script>
 </body>
 </html>

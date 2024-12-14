@@ -1,0 +1,112 @@
+@import url('https://fonts.cdnfonts.com/css/casselin');
+@import url('https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Poppins";
+    background-color: var(--bg-color);
+    height: 100vh;
+}
+
+:root{
+    --title-primary-color: #471023;
+    --bg-button-primary-color: #f83c86;
+    --bg-button-primary-hover: #b21047;
+    --text-primary-color: #c84579;
+    --text-secondary-color: #e482b0;
+    --text-white: #fef1f7;
+    --bg-secondary-color: #ffcae4;
+    --title-footer-color: #f6d4e5;
+    --text-footer-color: #e482b0;
+    --bg-footer-color: #aa2c5a;
+    --bg-color: #f9eaf2;
+}
+
+/*main*/
+
+.container-items{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: space-around;
+    margin: 2rem 4rem;
+    gap: 1rem;
+}
+
+.item{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    transition: all 0.3s ease-in-out;
+    background-color: var(--bg-color);
+    overflow: hidden;
+}
+
+.item img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.item figure{
+    width: 100%;
+    height: 70%;
+}
+
+.item:hover{
+    box-shadow: 0px 0px 2vh #e482b0;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+}
+
+.item h3{
+    border: #000 solid 1px;
+    color: var(--title-primary-color);
+}
+
+.item p{
+    color: var(--title-primary-color);
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+.info-product{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: left;
+    width: 100%;
+    padding: 1rem;
+}
+
+.btn-add-cart{
+    display: block;
+    margin-left: auto;
+    margin-right: 10px;
+    cursor: pointer;
+    width: 50%;
+    padding: 1rem;
+    border-radius: 25px;
+    border: none;
+    color: var(--text-white);
+    font-size: 16px;
+    font-family: "Poppins";
+    background-color: var(--bg-button-primary-color);
+    transition: background-color .2s ease-in-out;
+}
+
+.btn-add-cart:hover{
+    background-color: var(--bg-button-primary-hover);
+}
+
+.btn-add-cart:active{
+    transform: scale(0.9);
+}

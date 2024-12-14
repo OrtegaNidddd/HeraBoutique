@@ -69,6 +69,144 @@ h2{
     border-color: var(--bg-button-primary-hover);
 }
 
+
+/* carrito */
+
+.icon-cart{
+    width: 30px;
+    height: 30px;
+    stroke: #000;
+}
+
+.icon-cart:hover{
+    cursor: pointer;
+}
+
+.container-icon{
+    position: relative;
+    color: var(--title-primary-color);
+}
+
+.count-products{
+    position: absolute;
+    top: 40%;
+    right: 0;
+    left: 15px;
+    background-color: var(--bg-secondary-color);
+    color: #fff;
+    width: 25px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+.cart-empty{
+    text-align: center;
+    margin: 1rem;
+}
+
+#contador-productos {
+    color: var(--title-primary-color);
+    font-weight: 800;
+    font-size: 17px;
+}
+
+.cantidad-producto-carrito{
+    color: var(--text-primary-color);
+    font-weight: 800;
+    font-size: 20px;
+}
+
+.precio-producto-carrito{
+    color: var(--text-primary-color);
+    font-weight: 800;
+    font-size: 20px;
+}
+
+.total-pagar{
+    color: var(--text-primary-color);
+    font-size: 20px;
+}
+
+.container-cart-products{
+    position: absolute;
+    top: 50px;
+    right: 0;
+    background-color: #fff;
+    width: 400px;
+    z-index: 1;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.20);
+    border-radius: 10px;
+    
+}
+
+.cart-product{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.20);
+
+}
+
+.info-cart-product{
+    display: flex;
+    justify-content: space-between;
+    flex: 0.8;
+}
+
+.titulo-producto-carrito{
+    font-size: 20px;
+}
+
+.precio-producto-carrito{
+    font-weight: 700;
+    font-size: 20px;
+    margin-left: 10px;
+}
+
+.cantidad-producto-carrito{
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.icon-close{
+    width: 25px;
+    height: 25px;
+}
+
+.icon-close:hover{
+    stroke: red;
+    cursor: pointer;
+}
+
+.cart-total{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+    gap: 20px;
+}
+
+.cart-total h3{
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.total-pagar{
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.hidden-cart{
+    display: none;
+}
+
+/* carrito final */
+
+
 /**/
 
 #navPrimario{
@@ -166,7 +304,7 @@ h2{
     width: 100%; /* Expande el borde al ancho completo */
 }
 
-#navMenu span{
+#navMenuSpan{
     color: #ff2a2a;
     font-weight: 800;
 }
