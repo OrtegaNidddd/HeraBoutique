@@ -25,6 +25,10 @@ app.get("/registro", function(req, res){
     res.render("form-registro");
 });
 
+app.get("/finalizar-compra", function(req, res){
+    res.render("finalizar-compra");
+});
+
 
 //Ruta de Archivos Estaticos::::::::::::::::::::::::::::::::::::::::::::::::::::::
 

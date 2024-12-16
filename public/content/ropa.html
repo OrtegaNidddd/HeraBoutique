@@ -26,7 +26,7 @@
     <ul>
         <a href="/" class="links-menu"><li>Inicio</li></a>
         <a href="" class="links-menu"><li>Novedades</li></a>
-        <a href="content/ropa.html" class="links-menu"><li>Ropa</li></a>
+        <a href="../content/ropa.html" class="links-menu"><li>Ropa</li></a>
         <a href="" class="links-menu"><li>Maquillaje</li></a>
         <a href="" class="links-menu"><li>Accesorios</li></a>
         <a href="" class="links-menu" id="navMenuSpan"><span>Descuentos</span></a>
@@ -54,19 +54,9 @@
                             <p class="titulo-producto-carrito">Sin producto</p>
                             <span class="precio-producto-carrito">$0</span>
                         </div>
-                        <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            fill="none"
-                            viewBox="0 0 24 24"
-                            stroke-width="1.5"
-                            stroke="currentColor"
-                            class="icon-close"
-                        >
-                            <path
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                                d="M6 18L18 6M6 6l12 12"
-                            />
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="icon-close">
+                            <rect width="24" height="24" fill="none" />
+                            <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 7h16m-10 4v6m4-6v6M5 7l1 12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2l1-12M9 7V4a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v3" />
                         </svg>
                     </div>
                 </div>
@@ -74,6 +64,13 @@
                 <div class="cart-total hidden">
                     <h3>Total:</h3>
                     <span class="total-pagar">$0</span>
+                </div>
+                <div class="cart-Buttons">
+                    <a href="/finalizar-compra" id="btn-finalizar" class="btn-add-cart">
+                        <i class="fa-solid fa-check"></i>
+                        <span>Finalizar pedido</span>
+                    </a>
+                    <button id='btn-close-cart' class="secondary-Button">Cerrar</button>
                 </div>
                 <p class="cart-empty">CARRITO DE COMPRAS</p>
             </div>

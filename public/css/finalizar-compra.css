@@ -1,0 +1,139 @@
+@import url('https://fonts.cdnfonts.com/css/casselin');
+@import url('https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Poppins";
+    background-color: var(--bg-color);
+    height: 100vh;
+}
+
+:root{
+    --title-primary-color: #471023;
+    --bg-button-primary-color: #f83c86;
+    --bg-button-primary-hover: #b21047;
+    --text-primary-color: #c84579;
+    --text-secondary-color: #e482b0;
+    --text-white: #fef1f7;
+    --bg-secondary-color: #ffcae4;
+    --title-footer-color: #f6d4e5;
+    --text-footer-color: #e482b0;
+    --bg-footer-color: #aa2c5a;
+    --bg-color: #f9eaf2;
+}
+
+/*main*/
+
+main{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    margin: 2rem;
+}
+
+#container-datos-cliente{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+#form-datos-cliente{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+#form-datos-cliente label{
+    text-align: left;
+    font-size: 15px;
+    color: var(--title-primary-color);
+}
+
+#form-datos-cliente input{
+    border: 1px solid var(--title-primary-color);
+    background: none;
+    width: 100%;
+    height: 55px;
+    border-radius: 5px;
+    padding: 10px;
+    font-family: "Poppins";
+}
+
+#form-datos-cliente select{
+    border: 1px solid var(--title-primary-color);
+    background: none;
+    width: 100%;
+    height: 55px;
+    border-radius: 5px;
+    padding: 10px;
+    font-family: "Poppins";
+} 
+
+h2{
+    margin: 1rem;
+}
+
+#detalles-pedido{
+    margin: auto auto 2rem auto;
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    gap: 1rem;
+    
+    
+}
+
+#detalles-pedido div{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+}
+
+#detalles-pedido h2{
+    text-align: center;
+}
+
+hr{
+    border: 1px solid var(--title-primary-color);
+    margin: 1rem;
+}
+
+#resumen-carrito{
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+#resumen-carrito h3{
+    color: var(--title-primary-color);
+    margin: 0.5rem 0;
+    text-align: center;
+}
+
+#resumen-carrito strong{
+    color: var(--title-primary-color);
+}
+
+#resumen-carrito p{
+    margin: 0.5rem 0;
+    color: var(--text-primary-color);
+}
+
+#detalles-pedido p{
+    margin: 0.5rem 0;
+    color: var(--text-primary-color);
+}
+
+#detalles-pedido strong{
+    color: var(--title-primary-color);
+}
+
+.detalles-envio{
+    text-align: left;
+}

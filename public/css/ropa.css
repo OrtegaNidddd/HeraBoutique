@@ -43,7 +43,7 @@ body{
     flex-direction: column;
     align-items: left;
     width: 100%;
-    height: 100%;
+    height: 90%;
     border-radius: 10px;
     transition: all 0.3s ease-in-out;
     background-color: var(--bg-color);
@@ -85,28 +85,4 @@ body{
     align-items: left;
     width: 100%;
     padding: 1rem;
-}
-
-.btn-add-cart{
-    display: block;
-    margin-left: auto;
-    margin-right: 10px;
-    cursor: pointer;
-    width: 50%;
-    padding: 1rem;
-    border-radius: 25px;
-    border: none;
-    color: var(--text-white);
-    font-size: 16px;
-    font-family: "Poppins";
-    background-color: var(--bg-button-primary-color);
-    transition: background-color .2s ease-in-out;
-}
-
-.btn-add-cart:hover{
-    background-color: var(--bg-button-primary-hover);
-}
-
-.btn-add-cart:active{
-    transform: scale(0.9);
 }
