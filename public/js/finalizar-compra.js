@@ -44,4 +44,59 @@ document.addEventListener('DOMContentLoaded', () => {
     `;
 
     resumenCarrito.appendChild(totalDiv);
+     // Configurar el botón de enviar
+    const btnEnviar = document.getElementById('btn-enviar');
+    
+     // Prevenir el comportamiento por defecto del formulario al hacer clic
+    btnEnviar.addEventListener('click', (event) => {
+        event.preventDefault();
+        enviarWhatsapp();
+    });
 });
+
+// Función para enviar el mensaje a WhatsApp
+function enviarWhatsapp() {
+    const nombres = document.getElementById('nombres').value;
+    const apellidos = document.getElementById('apellidos').value;
+    const cedula = document.getElementById('cedula').value;
+    const email = document.getElementById('email').value;
+    const telefono = document.getElementById('telefono').value;
+    const ciudad = document.getElementById('ciudad').value;
+
+    let carrito = JSON.parse(localStorage.getItem('carrito')) || [];
+
+    let resumenCarrito = "Resumen del carrito:\n\n"; // Agregar un salto de línea después del título
+    let totalPagar = 0;
+
+    // Formatear los productos en el carrito
+    carrito.forEach((item, index) => {
+        const precioUnitario = parseFloat(item.price.slice(1)); // Convierte el precio a número
+        const subtotal = precioUnitario * item.quantity;
+
+        resumenCarrito += `${index + 1}. Producto: ${item.title}\n` +
+                            `   Cantidad: ${item.quantity}\n` +
+                            `   Precio Unitario: $${precioUnitario.toLocaleString('es-CO')}\n` +
+                            `   Subtotal: $${subtotal.toLocaleString('es-CO')}\n\n`; // Añadir doble salto de línea entre productos
+
+        totalPagar += subtotal;
+    });
+
+    // Agregar total al final del resumen
+    resumenCarrito += `\nTotal a pagar: $${totalPagar.toLocaleString('es-CO')}\n\n`;
+
+    const mensaje = `Hola, soy ${nombres} ${apellidos}, he realizado un pedido en la página web Hera Boutique.\n\n` +
+                    `Mis datos son:\n` +
+                    `Nombres: ${nombres}\n` +
+                    `Apellidos: ${apellidos}\n` +
+                    `Cédula: ${cedula}\n` +
+                    `Correo: ${email}\n` +
+                    `Teléfono: ${telefono}\n` +
+                    `Ciudad: ${ciudad}\n\n` +
+                    `Mi pedido es:\n${resumenCarrito}`; // Agregar el resumen del carrito
+
+    const numeroDestino = "+573235141712";
+    const url = `https://wa.me/${numeroDestino}?text=${encodeURIComponent(mensaje)}`;
+
+    window.open(url, '_blank');
+    localStorage.removeItem('carrito');
+}

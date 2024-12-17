@@ -75,6 +75,30 @@ app.post("/validar", function(req, res){
     });
 });
 
+/*
+//Validación de compra:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+app.post("/validar-compra", function(req, res){
+    const datos = req.body;
+    let nombres = datos.nombres;
+    let apellidos = datos.apellidos;
+    let cedula = datos.cedula;
+    let email = datos.email;
+    let telefono = datos.telefono;
+    let ciudad = datos.ciudad;
+
+    let registrarCompra = "INSERT INTO ventas (nombres, apellidos, cedula, email, telefono, ciudad) VALUES ('" + nombres + "', '" + apellidos + "', '" + cedula + "', '" + email + "', '" + telefono + "', '" + ciudad + "')";
+    conexion.query(registrarCompra, function(err){
+        if(err){
+            mensaje = "Error: No se pudo registrar la compra";
+            res.render("finalizar-compra.ejs", {mensaje});
+        }else{
+            success = "Datos registrados exitosamente";
+            res.render("finalizar-compra.ejs", {success});
+        }
+    });
+});
+*/
+
 //Puerto de la aplicación:::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
 app.listen(3000, function(){
