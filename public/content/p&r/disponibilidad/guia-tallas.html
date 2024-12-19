@@ -3,18 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <title>Hera Boutique</title>
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="../css/ropa.css">
+    <link rel="stylesheet" href="/public/css/style.css"
+    <link rel="stylesheet" href="/public/css/p&r.css">
     <script src="https://kit.fontawesome.com/a1ddf57449.js" crossorigin="anonymous"></script>
-    <link rel="shortcut icon" href="../assets/images/logos/logo-pestaña-1.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="/public/assets/images/logos/logo-pestaña-1.ico" type="image/x-icon">
 </head>
 <body>
 <header>
 <nav id="navPrimario">
-    <img src="../assets/images/logos/H-sin-fondo.png" alt="">
+    <img src="/public/assets/images/logos/H-sin-fondo.png" alt="">
     <h1>Hera Boutique</h1>
     <ul>
-        <a href="../content/obtener-ayuda.html"><li>Ayuda</li></a>
+        <a href="/public/content/obtener-ayuda.html"><li>Ayuda</li></a>
         <div></div>
         <a href="/registro"><li>Registrate</li></a>
         <div></div>
@@ -26,7 +26,7 @@
     <ul>
         <a href="/" class="links-menu"><li>Inicio</li></a>
         <a href="" class="links-menu"><li>Novedades</li></a>
-        <a href="../content/ropa.html" class="links-menu"><li>Ropa</li></a>
+        <a href="/public/content/ropa.html" class="links-menu"><li>Ropa</li></a>
         <a href="" class="links-menu"><li>Maquillaje</li></a>
         <a href="" class="links-menu"><li>Accesorios</li></a>
         <a href="" class="links-menu" id="navMenuSpan"><span>Descuentos</span></a>
@@ -78,89 +78,11 @@
     </div>
 </nav>
 <nav id="navAnuncio">
-    <a href=""><img src="../assets/videos/envios_y_devoluciones.gif" alt="envios_y_devoluciones"></a>
+    <a href=""><img src="/public/assets/videos/envios_y_devoluciones.gif" alt="envios_y_devoluciones"></a>
 </nav>
 </header>
 
-
-<main>
-
-    <!-- CANTIDAD DE ROPA EN PAGINA
-    <% if(typeof cantidad-ropa !== 'undefined'){ %> 
-        <h3>Ropa ( <%= cantidad-ropa %> )</h3>
-    <% } %>
-    -->
-
-    <div class="container-items">
-        <div class="item">
-            <figure>
-                <img
-                    src="../assets/images/catalogo/CORSET/REFCOR01.jpeg"
-                    alt="producto"
-                />
-            </figure>
-            <div class="info-product">
-                <h2>Corset Atenea</h2>
-                <p class="price">$90000</p>
-            </div>
-            <button class="btn-add-cart">Añadir al carrito</button>
-        </div>
-        <div class="item">
-            <figure>
-                <img
-                    src="../assets/images/catalogo/BLUSA/REFBLU01.jpeg"
-                    alt="producto"
-                />
-            </figure>
-            <div class="info-product">
-                <h2>Blusa Noche</h2>
-                <p class="price">$80000</p>
-            </div>
-            <button class="btn-add-cart">Añadir al carrito</button>
-        </div>
-        <div class="item">
-            <figure>
-                <img
-                    src="../assets/images/catalogo/BLUSA/REFBLU02.jpeg"
-                    alt="producto"
-                />
-            </figure>
-            <div class="info-product">
-                <h2>Blusa Cielo</h2>
-                <p class="price">$77900</p>
-            </div>
-            <button class="btn-add-cart">Añadir al carrito</button>
-        </div>
-        <div class="item">
-            <figure>
-                <img
-                    src="../assets/images/catalogo/BLUSA/REFBLU03.jpeg"
-                    alt="producto"
-                />
-            </figure>
-            <div class="info-product">
-                <h2>Blusa Mia</h2>
-                <p class="price">$65000</p>
-            </div>
-            <button class="btn-add-cart">Añadir al carrito</button>
-        </div>
-        <div class="item">
-            <figure>
-                <img
-                    src="../assets/images/catalogo/BLUSA/REFBLU04.jpeg"
-                    alt="producto"
-                />
-            </figure>
-            <div class="info-product">
-                <h2>Blusa Luna</h2>
-                <p class="price">$70000</p>
-            </div>
-            <button class="btn-add-cart">Añadir al carrito</button>
-        </div>
-    </div>
-
-</main>
-
+<!--MAIN CONTENT-->
 
 <footer>
     <div class="footer-container-1">
@@ -172,16 +94,16 @@
             <h4 class="title-subcontainer-footer">OBTENER AYUDA</h4>
             <ul>
             <li><a href="https://wa.me/+573235141712?text=Hola, tengo una pregunta, me podrian ayudar?" class="links-footer">Servicio al cliente</a></li>
-            <li><a href="../content/p&r/devoluciones/como-devolver.html" class="links-footer">Devoluciones</a></li>
-            <li><a href="../content/obtener-ayuda.html" class="links-footer">Preguntas Frecuentes</a></li>
-            <li><a href="../content/terminos-y-condiciones.html" class="links-footer">Términos y Condiciones</a></li>
+            <li><a href="/public//content/p&r/devoluciones/como-devolver.html" class="links-footer">Devoluciones</a></li>
+            <li><a href="/public/content/obtener-ayuda.html" class="links-footer">Preguntas Frecuentes</a></li>
+            <li><a href="/public/content/terminos-y-condiciones.html" class="links-footer">Términos y Condiciones</a></li>
             </ul>
         </div>
         <div class="footer-subcontainer-1">
             <h4 class="title-subcontainer-footer">ACERCA DE HERA</h4>
             <ul>
-            <li><a href="../content/quienes-somos.html" class="links-footer">¿Quienes Somos?</a></li>
-            <li><a href="../content/mision-y-visión.html" class="links-footer">Nuestra Misión y Visión</a></li>
+            <li><a href="/public/content/quienes-somos.html" class="links-footer">¿Quienes Somos?</a></li>
+            <li><a href="/public/content/mision-y-visión.html" class="links-footer">Nuestra Misión y Visión</a></li>
             </ul>
         </div>
         <div class="footer-subcontainer-2">
@@ -202,14 +124,14 @@
         <div class="footer-terminos">
             <ul>
                 <a href=""><li>Términos de Uso</li></a>
-                <a href="../content/p&r/devoluciones/como-devolver.html"><li>Políticas de Devolución</li></a>
+                <a href="/public/content/p&r/devoluciones/como-devolver.html"><li>Políticas de Devolución</li></a>
                 <a href=""><li>Políticas de Privacidad</li></a>
                 <a href=""><li>Términos de Venta</li></a>
             </ul>
-            <img src="../assets/images/logos/logo-sin-fondo.png" alt="">
+            <img src="/public/assets/images/logos/logo-sin-fondo.png" alt="">
         </div>
     </div>
 </footer>
-<script src="../js/carrito.js"></script>
+<script src="/public/js/carrito.js"></script>
 </body>
 </html>
