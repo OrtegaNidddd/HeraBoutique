@@ -11,7 +11,7 @@
 body{
     font-family: "Poppins";
     background-color: var(--bg-color);
-    width: auto;
+    height: 100vh;
 }
 
 :root{
@@ -80,8 +80,8 @@ h2{
     margin-top: auto;
     margin-bottom: 20px;
     cursor: pointer;
-    width: 50%;
-    padding: 1rem;
+    width: 70%;
+    padding: 4%;
     border-radius: 25px;
     border: none;
     color: var(--text-white);
@@ -718,7 +718,7 @@ h2{
 footer{
     background-color: var(--bg-footer-color);
     padding: 2rem;
-    color: var(--title-footer-color);
+    color: var(--title-footer-color);    
 }
 
 .footer-container-1{
@@ -753,6 +753,11 @@ footer{
 .footer-subcontainer-2{
     border-left: 1px solid var(--text-footer-color);
     padding-left: 1rem;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    place-content: center;
+    margin: auto;
 }
 
 .footer-subcontainer-2 h3{
@@ -762,7 +767,7 @@ footer{
 #container-redes{
     display: flex;
     justify-content: center;
-    width: 70vh;
+    width: 100%;
     gap: 2rem;
     margin-top: 10px;
 }
@@ -833,3 +838,5 @@ footer{
     background-color: var(--bg-secondary-color);
     border-radius: 10px;
 }
+
+/*media query*/
