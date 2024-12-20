@@ -11,7 +11,7 @@
 body{
     font-family: "Poppins";
     background-color: var(--bg-color);
-    height: 100vh;
+    width: auto;
 }
 
 :root{
