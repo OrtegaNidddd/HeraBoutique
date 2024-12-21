@@ -2,12 +2,14 @@ const { render } = require("ejs");
 const express = require("express");
 const mysql = require("mysql2");
 
+require("dotenv").config();
+
 const app = express();
 let conexion = mysql.createConnection({
-    host: "localhost",
-    user: "root",
-    password: "nick0310l",
-    database: "hera_boutique"
+    host: process.env.DB_HOST,
+    user: process.env.DB_USER,
+    password: process.env.DB_PASSWORD,
+    database: process.env.DB_NAME
 });
 
 //Ruta de Archivos Dinamicos::::::::::::::::::::::::::::::::::::::::::::::::::::::

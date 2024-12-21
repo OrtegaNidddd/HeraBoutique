@@ -37,7 +37,7 @@ body{
 }
 
 #container-pyr h2{
-    text-align: center;
+    text-align: left;
     color: var(--title-primary-color);
     font-size: 2.5rem;
 }
@@ -50,7 +50,7 @@ body{
 
 #subcontainer-pyr{
     display: flex;
-
+    margin-top: 1rem;
 }
 
 hr{
@@ -65,7 +65,7 @@ hr{
     align-items: center;
     text-align: center;
     gap: 1rem;
-    width: 40%;
+    width: 60%;
 }
 
 #contactanos-pyr i{
