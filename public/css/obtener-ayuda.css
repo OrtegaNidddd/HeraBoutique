@@ -47,10 +47,11 @@ h2{
 .subcontainer-obtener-ayuda{
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
     align-items: left;
-    gap: 1rem;
     width: 100%;
+    padding: .5rem;
+    border-radius: 5px;
+    border: #ffb0cc solid 1px;
 }
 
 .subcontainer-obtener-ayuda h3{
@@ -68,4 +69,18 @@ h2{
 
 .subcontainer-obtener-ayuda li a:hover{
     color: var(--title-primary-color);
+}
+
+.subcontainer-obtener-ayuda ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: auto;
+    margin: 1rem 0 0 0;
+    height: 100%;
+    gap: 1.5rem;
+}
+
+.subcontainer-obtener-ayuda li a{
+    letter-spacing: .5px;
 }

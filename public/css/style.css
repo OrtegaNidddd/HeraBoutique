@@ -12,6 +12,8 @@ body{
     font-family: "Poppins";
     background-color: var(--bg-color);
     height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 :root{
@@ -557,8 +559,8 @@ h2{
 #subcontainer-registro{
     display: flex;
     flex-direction: column;
-    width: 40%;
-    height: auto;
+    width: 60%;
+    height: 100%;
     margin: 1rem;
     text-align: center;
 }
@@ -716,6 +718,7 @@ h2{
 /*FOOTER*/
 
 footer{
+    margin-top: auto;
     background-color: var(--bg-footer-color);
     padding: 2rem;
     color: var(--title-footer-color);    
