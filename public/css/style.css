@@ -105,6 +105,8 @@ h2{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 1rem;
+    margin: 0 1rem;
 }
 
 .cart-Buttons a{
@@ -136,7 +138,6 @@ h2{
     place-items: center;
     text-decoration: none;
     text-align: center;
-
 }
 
 #btn-finalizar i{
